@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Open a note in Obsidian</title>
+  <link rel="stylesheet" href="bridge.css">
+  <script src="bridge.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Quant Knowledge Vault</p>
+    <h1 id="title">Open a note in Obsidian</h1>
+    <p id="message">This page needs JavaScript to look up a Knowledge ID.</p>
+    <section id="actions" hidden aria-label="Obsidian navigation">
+      <button id="open-note" type="button">Open in Obsidian</button>
+      <label for="uri">Obsidian URI fallback</label>
+      <input id="uri" type="text" readonly spellcheck="false">
+      <p class="hint">Select and copy the address. On Windows, paste it into Win+R and press Enter.</p>
+    </section>
+  </main>
+</body>
+</html>
